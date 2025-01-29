@@ -7,7 +7,7 @@ import { logger } from './utils';
 dotenv.config();
 
 const app: Express = express();
-const port = process.env.SERVER_PORT || 8080;
+const port = process.env.PORT || 8080;
 
 const consOptions = {
   origin: ['http://localhost:3000'],
