@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import videoRoute from './routes/video-upload';
+import { exampleRouter } from './routers';
 
 const routers = Router();
 
-routers.use('/video', videoRoute);
+routers.use('/example', exampleRouter);
 
 export default routers;
